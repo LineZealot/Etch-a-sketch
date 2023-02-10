@@ -1,0 +1,26 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.background {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+.contentHead {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid rgb(40, 40, 40) 1px;
+}
+.contentTitle {
+    font-size: 36px;
+    color: white;
+}
