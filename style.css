@@ -8,19 +8,58 @@ body {
     display: flex;
     flex-direction: column;
 }
+button {
+    all: unset;
+}
 .background {
     background-color: black;
     height: 100%;
     width: 100%;
 }
-.contentHead {
+.content-head {
     height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: solid rgb(40, 40, 40) 1px;
 }
-.contentTitle {
+.content-title {
     font-size: 36px;
     color: white;
+}
+.content-body {
+    height: 89%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.controls-top {
+    margin-bottom: 12px;
+}
+.button-set-scale, .button-clear-tiles, .button-rgb-mode {
+    font-size: 24px;
+    color: white;
+    border: solid white 1px;
+    border-radius: 8px;
+    padding: 8px;
+}
+.button-set-scale:hover, .button-clear-tiles:hover, .button-rgb-mode:hover {
+    background-color: rgb(40, 40, 40);
+}
+.grid-space {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.grid-row {
+    all: unset;
+    display: flex;
+    flex: auto;
+}
+.grid-tile {
+    display: flex;
+    flex: auto;
+    border: solid rgb(40, 40, 40) 1px;
 }
