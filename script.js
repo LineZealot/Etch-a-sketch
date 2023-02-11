@@ -1,5 +1,13 @@
-// get content-body
-const contentBody = document.querySelector('.content-body');
+// get doodle-box
+const doodleBox = document.querySelector('.doodle-box');
+
+// get paint color buttons
+const paintWhite = document.querySelector('.paint.white');
+const paintBlack = document.querySelector('.paint.black');
+const paintRed = document.querySelector('.paint.red');
+const paintGreen = document.querySelector('.paint.green');
+const paintBlue = document.querySelector('.paint.blue');
+const paintYellow = document.querySelector('.paint.yellow');
 
 // get button-set-scale
 const buttonSetScale = document.querySelector('.button-set-scale');
@@ -34,7 +42,7 @@ function generateGrid (s) {
         }
         gridSpace.appendChild(gridRow);
     }
-    contentBody.appendChild(gridSpace);
+    doodleBox.appendChild(gridSpace);
 }
 
 // initial 16x16 grid generation on start
@@ -70,3 +78,23 @@ buttonRgb.addEventListener('click', () => {
         tiles[x].style.border = 'solid ' + colorRandom + ' 1px';
     }
 })
+
+// setColor function
+paintWhite.addEventListener('click', () => {
+    color = 'white';
+});
+paintBlack.addEventListener('click', () => {
+    color = 'black';
+});
+paintRed.addEventListener('click', () => {
+    color = 'red';
+});
+paintGreen.addEventListener('click', () => {
+    color = 'green';
+});
+paintBlue.addEventListener('click', () => {
+    color = 'blue';
+});
+paintYellow.addEventListener('click', () => {
+    color = 'yellow';
+});
