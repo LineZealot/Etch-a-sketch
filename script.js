@@ -50,8 +50,14 @@ generateGrid(16);
 
 // buttonSetScale function
 buttonSetScale.addEventListener('click', function() {
+    let scale = prompt('Enter grid scale:');
     document.querySelector('.grid-space').remove();
-    generateGrid(prompt('Enter grid scale:'));
+    if (scale <= 100) {
+        generateGrid(scale);
+    } else {
+        alert('Maximum scale is 100 tiles!');
+        generateGrid(100);
+    }
 })
 
 // buttonClearTiles function
